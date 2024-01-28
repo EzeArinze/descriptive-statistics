@@ -6,8 +6,8 @@ class Statistics {
   //  calculating for the mean
   calculateMean() {
     let sum = this.numbers.reduce((a, b) => a + b, 0); // using arrow function
-    // let sum = this.numbers.reduce(function (acc, curr) {
-    //   return acc + curr;
+    // let sum = this.numbers.reduce(function (a, b) {
+    //   return a + b;
     // }, 0);
     return sum / this.numbers.length;
   }
