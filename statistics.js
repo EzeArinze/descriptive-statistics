@@ -57,8 +57,8 @@ class Statistics {
   calculateVariance() {
     let mean = this.calculateMean();
     let variance = this.numbers.reduce((a, b) => a + Math.pow(b - mean, 2), 0);
-    // this.numbers.reduce(function (acc, curr) {
-    //   return acc + Math.pow(curr - mean, 2);
+    // this.numbers.reduce(function (a, b) {
+    //   return a + Math.pow(b - mean, 2);
     // }, 0) / this.numbers.length;
     return variance / this.numbers.length;
   }
